@@ -1,0 +1,224 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E6C69513-1FDC-4794-B4C2-CDE41764C922}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Hands_On_Work_IV</RootNamespace>
+    <AssemblyName>Hands On Work IV</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=8.0.26.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Adicionar_Produtos_Caixa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Adicionar_Produtos_Caixa.Designer.cs">
+      <DependentUpon>Adicionar_Produtos_Caixa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Caixa_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Caixa_Form.Designer.cs">
+      <DependentUpon>Caixa_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Adicionar_Clientes_Caixa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Adicionar_Clientes_Caixa.Designer.cs">
+      <DependentUpon>Adicionar_Clientes_Caixa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cartao_Pagamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cartao_Pagamento.Designer.cs">
+      <DependentUpon>Cartao_Pagamento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Classe_Caixa.cs" />
+    <Compile Include="Classe_Clientes.cs" />
+    <Compile Include="Clientes_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Clientes_Form.Designer.cs">
+      <DependentUpon>Clientes_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Relat_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Relat_Form.Designer.cs">
+      <DependentUpon>Relat_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Relatorios_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Resources\Relatorios_Form.Designer.cs">
+      <DependentUpon>Relatorios_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sobre_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sobre_Form.Designer.cs">
+      <DependentUpon>Sobre_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Farmacia_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Farmacia_Form.Designer.cs">
+      <DependentUpon>Farmacia_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Classe_Produtos.cs" />
+    <Compile Include="Produtos_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Produtos_Form.Designer.cs">
+      <DependentUpon>Produtos_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Adicionar_Produtos_Caixa.resx">
+      <DependentUpon>Adicionar_Produtos_Caixa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Caixa_Form.resx">
+      <DependentUpon>Caixa_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Adicionar_Clientes_Caixa.resx">
+      <DependentUpon>Adicionar_Clientes_Caixa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cartao_Pagamento.resx">
+      <DependentUpon>Cartao_Pagamento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Clientes_Form.resx">
+      <DependentUpon>Clientes_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relat_Form.resx">
+      <DependentUpon>Relat_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sobre_Form.resx">
+      <DependentUpon>Sobre_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Farmacia_Form.resx">
+      <DependentUpon>Farmacia_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Produtos_Form.resx">
+      <DependentUpon>Produtos_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\account-6491185.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-house-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-house-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-house-64 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-house-64 %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-house-64__2_-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-house-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-configuration-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user-29355271.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user-2935527-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-user-account-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-user-account-26.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-product-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-sell-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-shopping-cart-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-about-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SAsdad.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-combo-chart-60.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-combo-chart-30.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
